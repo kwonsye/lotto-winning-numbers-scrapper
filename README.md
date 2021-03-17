@@ -4,6 +4,7 @@
 - [크롤링한 사이트](https://superkts.com/lotto/list/?)
 - no DB, ORM, just api controller
 - [api-document-swagger-ui](http://52.79.103.18/swagger-ui/)
+- [DockerHub 에 올린 docker image](https://hub.docker.com/layers/kwonsye56/scrapping-app/latest/images/sha256:20731a42859784674d6313adf5ab37f09b538e7eb22e2f7bf4bf1f50596a2415)
 
 ## Develop Env
 - `Java15`
@@ -22,3 +23,4 @@
 ## Deploy Env
 - [AWS LightSail](https://aws.amazon.com/ko/lightsail/?nc2=type_a) Amazon Linux2 instance (1GB memory, 1 core cpu, 40GB SSD)
 - `DockerHub`, `Docker`
+ㅇ
