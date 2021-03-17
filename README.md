@@ -23,4 +23,5 @@
 ## Deploy Env
 - [AWS LightSail](https://aws.amazon.com/ko/lightsail/?nc2=type_a) Amazon Linux2 instance (1GB memory, 1 core cpu, 40GB SSD)
 - `DockerHub`, `Docker`
-ㅇ
+
+### ☕ CoffeeTime with [Disney Medley🌈](https://www.youtube.com/watch?v=lVqNI6qP1ms&list=PLwbkir_8t_gznpmEa7Dh6zm1sAs_4r_yq&index=3)
