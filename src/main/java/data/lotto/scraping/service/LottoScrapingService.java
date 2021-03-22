@@ -67,9 +67,13 @@ public class LottoScrapingService {
                     .map(winningNumber -> Integer.valueOf(winningNumber.text()))
                     .collect(Collectors.toList());
 
+            int lastIndex = winningNumbers.size()-1;
+            Integer bonusNumber = Integer.valueOf(winningNumbers.get(lastIndex).text());
+
             ResLottoWinningNumbersHistory history = ResLottoWinningNumbersHistory.builder()
                     .roundNumber(roundNumber)
                     .winningNumbers(winningNumberList)
+                    .bonusNumber(bonusNumber)
                     .build();
 
             historyList.add(history);

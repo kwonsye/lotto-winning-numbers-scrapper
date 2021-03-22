@@ -76,4 +76,23 @@ public class LottoScrapingServiceTest {
         assertEquals("954", historyElements.get(0).select("td").get(0).text());
         assertEquals(8, historyElements.get(0).select("td").get(1).select("span").size());
     }
+
+    @Test
+    void 로또_보너스번호_크롤링_테스트() throws IOException {
+        //given
+        int pageNum = 1;
+        Connection connection = Jsoup.connect(LOTTO_CRAWLING_BASE_URL +
+                LOTTO_CRAWLING_QUERY_PARAM + pageNum);
+
+        //when
+        Document html = connection.get();
+        Elements historyTableRow = html.select("tr");
+        Element latestHistoryElements = historyTableRow.get(1);
+
+        Elements tds = latestHistoryElements.select("td");
+        Elements winningNumbers = tds.get(1).select("span");
+        Integer bonusNumber = Integer.valueOf(winningNumbers.get(winningNumbers.size()-1).text());
+
+        assertEquals(32, bonusNumber);
+    }
 }
